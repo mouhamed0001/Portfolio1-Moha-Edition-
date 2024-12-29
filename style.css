@@ -15,10 +15,6 @@ body{
     position: relative;
 }
 .up-arrow{
-    width: fit-content;
-    height: fit-content;
-}
-.up-arrow{
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -109,19 +105,19 @@ header ul .menu:hover::before{
     }
 }
 header ul button{
-    background-color: #c430d7;
+    background-color: hsl(293, 70%, 48%);
     padding: 6px;
     border: none;
     outline: none;
-    border-radius: 25px 0px 25px 0px;
+    border-radius: 8px;
     animation: btn 0.5s forwards ease;
     transition: 0.5s;
 }
 header ul button:hover{
-    border-radius: 25px;
+    border-radius: 0px;
 }
 header ul button a{
-    color: #000429;
+    color: #fff;
     font-size: 18px;
     font-weight: 600;
 }
@@ -450,6 +446,13 @@ header ul button a{
 .section2 .container2 .content2 .bttn .btn1:hover::before{
     transform: scaleX(1);
 }
+.section2 .container2 .content2 .bttn .btn1:hover a{
+    color: #fff;
+    animation-delay: 0.5s;
+}
+.section2 .container2 .content2 .bttn .btn2 a{
+    color: #fff;
+}
 .section2 .container2 .content2 .bttn .btn2::before{
     content: '';
     width: 100%;
@@ -466,6 +469,9 @@ header ul button a{
 }
 .section2 .container2 .content2 .bttn .btn2:hover::before{
     transform: scaleX(0);
+}
+.section2 .container2 .content2 .bttn .btn2:hover a{
+    color: #000;
 }
 @media (max-width:900px){
     .section2{
@@ -548,7 +554,7 @@ header ul button a{
     border-radius: 15px;
     z-index: 100000;
     position: relative;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .section3 .container3 .content3>div .parentpart2>div{
     width: 95%;
@@ -557,7 +563,7 @@ header ul button a{
     border-radius: 15px;
     z-index: 10000;
     position: relative;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .section3 .container3 .content3>div .parentpart1>div::before{
     content: '';
@@ -589,7 +595,7 @@ header ul button a{
     border-radius: 15px;
     overflow: hidden;
 }
-.section3 .container3 .content3>div .parentpart1 .content::before{
+/* .section3 .container3 .content3>div .parentpart1 .content::before{
     content: '';
     width: 100%;
     height: 100%;
@@ -622,7 +628,7 @@ header ul button a{
 }
 .section3 .container3 .content3>div .parentpart2 .content:hover::before{
     transform: scaleX(1);
-}
+} */
 .section3 .container3 .content3>div .content p,h3,p{
     margin-left: 15px;
 }
@@ -710,7 +716,7 @@ header ul button a{
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    cursor: pointer;
+    /* cursor: pointer; */
     z-index: 10000;
     overflow: hidden;
     position: relative;
@@ -796,7 +802,7 @@ header ul button a{
     background-color: #c430d7;
     border-radius: 5px;
 }
-.section4 .container4 .content4 .soucontent4-1::before{
+/* .section4 .container4 .content4 .soucontent4-1::before{
     content: '';
     width: 100%;
     height: 100%;
@@ -829,7 +835,7 @@ header ul button a{
 }
 .section4 .container4 .content4 .soucontent4-2:hover::before{
     transform: scaleX(1);
-}
+} */
 @media (max-width:1000px) {
     .section4{
         width: 100%;
